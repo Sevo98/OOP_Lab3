@@ -5,8 +5,17 @@ using namespace std;
 
 void DemoBook()
 {
-	
-	Book book1;
+	Book books[3];
+	for (int i = 0; i < 3; i++)
+	{
+		ReadBookFromConsole(books[i]);
+	}
+	for (int i = 0; i < 3; i++)
+	{
+		WriteBookFromConsole(books[i]);
+	}
+
+	/*Book book1;
 	book1.Name = "Head First Java";
 	book1.PublishYear = 2020;
 	book1.Pages = 717;
@@ -21,7 +30,7 @@ void DemoBook()
 	for (int i = 0; i < book1.AuthorNumbers; i++)
 	{
 		cout << book1.Authors[i] << endl;
-	}
+	}*/
 
 }
 

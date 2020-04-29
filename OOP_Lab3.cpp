@@ -12,8 +12,9 @@ int main()
 
     DemoBook();
 	
-	Book book;
+
+	/*Book book;
 	ReadBookFromConsole(book);
-	WriteBookFromConsole(book);
+	WriteBookFromConsole(book);*/
 
 }
