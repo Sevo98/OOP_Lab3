@@ -5,15 +5,26 @@ using namespace std;
 
 void DemoBook()
 {
-	Book books[3];
-	for (int i = 0; i < 3; i++)
+	int booksCount = 2;
+	Book books[2];
+	for (int i = 0; i < booksCount; i++)
 	{
 		ReadBookFromConsole(books[i]);
 	}
-	for (int i = 0; i < 3; i++)
+	for (int i = 0; i < booksCount; i++)
 	{
 		WriteBookFromConsole(books[i]);
 	}
+
+	cout << "¬ведите автора дл€ поиска книги: ";
+	string findAuthor;
+	getline(cin, findAuthor);
+	int findBook = FindBookByAuthor(books, booksCount, findAuthor);
+	if (findBook != -1)
+	{
+		cout << " нига автора: " << findAuthor << ". " << books[findBook].Name << ". " << books[findBook].PublishYear << ". - " << books[findBook].Pages << "c." << endl;
+	}
+	else cout << " нига не найдена" << endl;
 
 	/*Book book1;
 	book1.Name = "Head First Java";
@@ -133,4 +144,19 @@ void WriteBookFromConsole(Book& book)
 
 	cout << book.Name << ". ";
 	cout << book.PublishYear << ". - " << book.Pages << "c." << endl;
+}
+
+int FindBookByAuthor(Book* books, int booksCount, string author)
+{
+	for (int i = 0; i < booksCount; i++)
+	{
+		for (int j = 0; j < 10; j++)
+		{
+			if (author == books[i].Authors[j])
+			{
+				return i;
+			}
+		}
+	}
+	return -1;
 }

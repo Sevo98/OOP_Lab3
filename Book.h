@@ -17,3 +17,4 @@ void DemoBook();
 
 void ReadBookFromConsole(Book& book);
 void WriteBookFromConsole(Book& book);
+int FindBookByAuthor(Book* books, int booksCount, string author);
