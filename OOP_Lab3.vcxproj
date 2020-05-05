@@ -159,7 +159,9 @@
     <ClCompile Include="..\..\..\Лабораторная работа №2\OOP_Lab2\OOP_Lab2\Struct with enums.cpp" />
     <ClCompile Include="..\..\..\Лабораторная работа №2\OOP_Lab2\OOP_Lab2\Struct.cpp" />
     <ClCompile Include="Book.cpp" />
+    <ClCompile Include="CheckInput.cpp" />
     <ClCompile Include="OOP_Lab3.cpp" />
+    <ClCompile Include="Route.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\Лаборатоная работа №1\OOP_Lab1\OOP_Lab1\Algorithms and Debug.h" />
@@ -174,6 +176,8 @@
     <ClInclude Include="..\..\..\Лабораторная работа №2\OOP_Lab2\OOP_Lab2\Struct with enums.h" />
     <ClInclude Include="..\..\..\Лабораторная работа №2\OOP_Lab2\OOP_Lab2\Struct.h" />
     <ClInclude Include="Book.h" />
+    <ClInclude Include="CheckInput.h" />
+    <ClInclude Include="Route.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,5 +1,6 @@
 #include <iostream>
 #include "Book.h"
+#include "CheckInput.h"
 
 using namespace std;
 
@@ -51,7 +52,6 @@ void ReadBookFromConsole(Book& book)
 	cout << "Введите название книги: ";
 	getline(cin, book.Name);
 	
-	
 	bool CheckYear = false;
 	while (CheckYear == false)
 	{
@@ -59,7 +59,7 @@ void ReadBookFromConsole(Book& book)
 			{
 				cout << "Введите год издания: ";
 				int year;
-				cin >> year;
+				CheckInput(&year);
 				if (year < 0 || year > 2020)
 				{
 					throw exception("Неправильный год издания! Повторите ввод.");
@@ -80,7 +80,7 @@ void ReadBookFromConsole(Book& book)
 		{
 			cout << "Введите количество страниц: ";
 			int pages;
-			cin >> pages;
+			CheckInput(&pages);
 			if (pages <= 1)
 			{
 				throw exception("Количество страниц не должно быть меньше 1! Повторите ввод.");
@@ -101,7 +101,7 @@ void ReadBookFromConsole(Book& book)
 		{
 			cout << "Введите количество авторов: ";
 			int authors;
-			cin >> authors;
+			CheckInput(&authors);
 
 			if (authors < 1 || authors > 10)
 			{

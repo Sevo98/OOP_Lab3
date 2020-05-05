@@ -72,6 +72,12 @@
     <ClCompile Include="..\..\..\Лабораторная работа №2\OOP_Lab2\OOP_Lab2\Struct.cpp">
       <Filter>Исходные файлы\Lab2</Filter>
     </ClCompile>
+    <ClCompile Include="CheckInput.cpp">
+      <Filter>Исходные файлы\Lab3</Filter>
+    </ClCompile>
+    <ClCompile Include="Route.cpp">
+      <Filter>Исходные файлы\Lab3</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Book.h">
@@ -109,6 +115,12 @@
     </ClInclude>
     <ClInclude Include="..\..\..\Лабораторная работа №2\OOP_Lab2\OOP_Lab2\Struct.h">
       <Filter>Файлы заголовков\Lab2</Filter>
+    </ClInclude>
+    <ClInclude Include="CheckInput.h">
+      <Filter>Файлы заголовков\Lab3</Filter>
+    </ClInclude>
+    <ClInclude Include="Route.h">
+      <Filter>Файлы заголовков\Lab3</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
