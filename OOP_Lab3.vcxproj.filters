@@ -78,6 +78,9 @@
     <ClCompile Include="Route.cpp">
       <Filter>Исходные файлы\Lab3</Filter>
     </ClCompile>
+    <ClCompile Include="Point.cpp">
+      <Filter>Исходные файлы\Lab3</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Book.h">
@@ -120,6 +123,9 @@
       <Filter>Файлы заголовков\Lab3</Filter>
     </ClInclude>
     <ClInclude Include="Route.h">
+      <Filter>Файлы заголовков\Lab3</Filter>
+    </ClInclude>
+    <ClInclude Include="Point.h">
       <Filter>Файлы заголовков\Lab3</Filter>
     </ClInclude>
   </ItemGroup>

@@ -3,6 +3,7 @@
 #include "Book.h"
 #include "Route.h"
 #include "CheckInput.h"
+#include "Point.h"
 
 using namespace std;
 
@@ -11,7 +12,7 @@ int main()
 	SetConsoleOutputCP(1251);
 	SetConsoleCP(1251);
 	setlocale(LC_ALL, "ru");
-	
+
 	while (true)
 	{
 		int number = 0; 
