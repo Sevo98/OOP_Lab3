@@ -6,8 +6,8 @@ using namespace std;
 
 void DemoBook()
 {
-	int booksCount = 2;
-	Book books[2];
+	const int booksCount = 2;
+	Book books[booksCount];
 	for (int i = 0; i < booksCount; i++)
 	{
 		ReadBookFromConsole(books[i]);

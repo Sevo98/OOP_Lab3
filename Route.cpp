@@ -6,8 +6,8 @@ using namespace std;
 
 void DemoRoute()
 {
-	int routesCount = 3;
-	Route routes[3];
+	const int routesCount = 3;
+	Route routes[routesCount];
 
 	for (int i = 0; i < routesCount; i++)
 	{
