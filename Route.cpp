@@ -1,6 +1,6 @@
 #include <iostream>
 #include "Route.h"
-#include "CheckInput.h"
+#include "CheckInputInt.h"
 
 using namespace std;
 
@@ -41,7 +41,7 @@ void ReadRouteFromConsole(Route& route)
 		{
 			cout << "Введите номер рейса: ";
 			int Number;
-			CheckInput(&Number);
+			CheckInputInt(&Number);
 			if (Number < 0)
 			{
 				throw exception("Неправильный номер рейса! Повторите ввод.");
@@ -62,7 +62,7 @@ void ReadRouteFromConsole(Route& route)
 		{
 			cout << "Введите среднюю продолжительность рейса в минутах: ";
 			int TimeMin;
-			CheckInput(&TimeMin);
+			CheckInputInt(&TimeMin);
 			//route cannot be under 10 minutes
 			if (TimeMin < 10)
 			{
@@ -84,7 +84,7 @@ void ReadRouteFromConsole(Route& route)
 		{
 			cout << "Введите средний интервал между рейсами в минутах: ";
 			int IntervalMin;
-			CheckInput(&IntervalMin);
+			CheckInputInt(&IntervalMin);
 			if (IntervalMin < 5)
 			{
 				throw exception("Неправильный интервал! Повторите ввод.");
@@ -105,7 +105,7 @@ void ReadRouteFromConsole(Route& route)
 		{
 			cout << "Введите количество остановок: ";
 			int RouteStopCount;
-			CheckInput(&RouteStopCount);
+			CheckInputInt(&RouteStopCount);
 			if (RouteStopCount < 1 || RouteStopCount > 20)
 			{
 				throw exception("Количество остановок должно быть от 2 до 20. Повторите ввод.");

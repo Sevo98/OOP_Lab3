@@ -72,13 +72,19 @@
     <ClCompile Include="..\..\..\Лабораторная работа №2\OOP_Lab2\OOP_Lab2\Struct.cpp">
       <Filter>Исходные файлы\Lab2</Filter>
     </ClCompile>
-    <ClCompile Include="CheckInput.cpp">
-      <Filter>Исходные файлы\Lab3</Filter>
-    </ClCompile>
     <ClCompile Include="Route.cpp">
       <Filter>Исходные файлы\Lab3</Filter>
     </ClCompile>
     <ClCompile Include="Point.cpp">
+      <Filter>Исходные файлы\Lab3</Filter>
+    </ClCompile>
+    <ClCompile Include="Rectangles.cpp">
+      <Filter>Исходные файлы\Lab3</Filter>
+    </ClCompile>
+    <ClCompile Include="CheckInputInt.cpp">
+      <Filter>Исходные файлы\Lab3</Filter>
+    </ClCompile>
+    <ClCompile Include="CheckInputDouble.cpp">
       <Filter>Исходные файлы\Lab3</Filter>
     </ClCompile>
   </ItemGroup>
@@ -119,13 +125,19 @@
     <ClInclude Include="..\..\..\Лабораторная работа №2\OOP_Lab2\OOP_Lab2\Struct.h">
       <Filter>Файлы заголовков\Lab2</Filter>
     </ClInclude>
-    <ClInclude Include="CheckInput.h">
-      <Filter>Файлы заголовков\Lab3</Filter>
-    </ClInclude>
     <ClInclude Include="Route.h">
       <Filter>Файлы заголовков\Lab3</Filter>
     </ClInclude>
     <ClInclude Include="Point.h">
+      <Filter>Файлы заголовков\Lab3</Filter>
+    </ClInclude>
+    <ClInclude Include="Rectangles.h">
+      <Filter>Файлы заголовков\Lab3</Filter>
+    </ClInclude>
+    <ClInclude Include="CheckInputDouble.h">
+      <Filter>Файлы заголовков\Lab3</Filter>
+    </ClInclude>
+    <ClInclude Include="CheckInputInt.h">
       <Filter>Файлы заголовков\Lab3</Filter>
     </ClInclude>
   </ItemGroup>

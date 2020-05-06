@@ -12,7 +12,7 @@ struct Route
 	int RouteStopCount;
 	string RouteStop[20];
 };
-
+	
 void DemoRoute();
 
 void ReadRouteFromConsole(Route& route);

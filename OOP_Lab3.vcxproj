@@ -159,9 +159,11 @@
     <ClCompile Include="..\..\..\Лабораторная работа №2\OOP_Lab2\OOP_Lab2\Struct with enums.cpp" />
     <ClCompile Include="..\..\..\Лабораторная работа №2\OOP_Lab2\OOP_Lab2\Struct.cpp" />
     <ClCompile Include="Book.cpp" />
-    <ClCompile Include="CheckInput.cpp" />
+    <ClCompile Include="CheckInputDouble.cpp" />
+    <ClCompile Include="CheckInputInt.cpp" />
     <ClCompile Include="OOP_Lab3.cpp" />
     <ClCompile Include="Point.cpp" />
+    <ClCompile Include="Rectangles.cpp" />
     <ClCompile Include="Route.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -177,8 +179,10 @@
     <ClInclude Include="..\..\..\Лабораторная работа №2\OOP_Lab2\OOP_Lab2\Struct with enums.h" />
     <ClInclude Include="..\..\..\Лабораторная работа №2\OOP_Lab2\OOP_Lab2\Struct.h" />
     <ClInclude Include="Book.h" />
-    <ClInclude Include="CheckInput.h" />
+    <ClInclude Include="CheckInputInt.h" />
+    <ClInclude Include="CheckInputDouble.h" />
     <ClInclude Include="Point.h" />
+    <ClInclude Include="Rectangles.h" />
     <ClInclude Include="Route.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

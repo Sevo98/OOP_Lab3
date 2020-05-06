@@ -1,10 +1,10 @@
 #include <iostream>
-#include "CheckInput.h"
+#include "CheckInputDouble.h"
 using namespace std;
 
-void CheckInput(int* number)
+void CheckInputDouble(double* ChechDouble)
 {
-	int index;
+	double index;
 	bool correct = false;
 	while (!correct) {
 		cin >> index;
@@ -16,7 +16,7 @@ void CheckInput(int* number)
 		}
 		else {
 			cin.ignore();
-			*number = index;
+			*ChechDouble = index;
 			correct = true;
 		}
 	}
