@@ -4,6 +4,7 @@
 #include "Route.h"
 #include "CheckInputInt.h"
 #include "Point.h"
+#include "Rectangles.h"
 
 using namespace std;
 
@@ -13,6 +14,7 @@ int main()
 	SetConsoleCP(1251);
 	setlocale(LC_ALL, "ru");
 
+	DemoRectangleWithPoint();
 
 	while (true)
 	{
