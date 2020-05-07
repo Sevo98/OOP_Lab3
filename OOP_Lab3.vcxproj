@@ -165,6 +165,7 @@
     <ClCompile Include="Point.cpp" />
     <ClCompile Include="Rectangles.cpp" />
     <ClCompile Include="Route.cpp" />
+    <ClCompile Include="Time.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\Лаборатоная работа №1\OOP_Lab1\OOP_Lab1\Algorithms and Debug.h" />
@@ -184,6 +185,7 @@
     <ClInclude Include="Point.h" />
     <ClInclude Include="Rectangles.h" />
     <ClInclude Include="Route.h" />
+    <ClInclude Include="Time.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

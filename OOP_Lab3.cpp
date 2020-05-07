@@ -5,6 +5,7 @@
 #include "CheckInputInt.h"
 #include "Point.h"
 #include "Rectangles.h"
+#include "Time.h"
 
 using namespace std;
 
@@ -14,13 +15,13 @@ int main()
 	SetConsoleCP(1251);
 	setlocale(LC_ALL, "ru");
 
-	DemoRectangleWithPoint();
 
 	while (true)
-	{
+ {
 		int number = 0; 
 		cout << "Введите от 1 до …" << endl;
 		cout << "1. Структуры с полями-массивами" << endl;
+		cout << "2. Агрегирование" << endl;
 		CheckInputInt(&number);
 		switch (number)
 		{
@@ -58,8 +59,28 @@ int main()
 				} break;
 			}
 			case 2:
+			{
+				while (true)
 				{
-				} break;
+					int number = 0;
+					cout << "Введите от 1 до .." << endl;
+					cout << "1. Задание 3.3.4-3.3.5, структура Rectangle" << endl;
+					CheckInputInt(&number);
+					switch (number)
+					{
+						//3.3.4-3.3.5
+					case 1:
+						{
+							DemoRectangleWithPoint();
+						} break;
+					//
+					case 2:
+						{
+
+						} break;
+					} break;
+				}
+			}
 		}
 	}
 
