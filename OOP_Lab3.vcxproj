@@ -161,6 +161,7 @@
     <ClCompile Include="Book.cpp" />
     <ClCompile Include="CheckInputDouble.cpp" />
     <ClCompile Include="CheckInputInt.cpp" />
+    <ClCompile Include="Flight.cpp" />
     <ClCompile Include="OOP_Lab3.cpp" />
     <ClCompile Include="Point.cpp" />
     <ClCompile Include="Rectangles.cpp" />
@@ -182,6 +183,7 @@
     <ClInclude Include="Book.h" />
     <ClInclude Include="CheckInputInt.h" />
     <ClInclude Include="CheckInputDouble.h" />
+    <ClInclude Include="Flight.h" />
     <ClInclude Include="Point.h" />
     <ClInclude Include="Rectangles.h" />
     <ClInclude Include="Route.h" />
