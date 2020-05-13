@@ -16,7 +16,6 @@ int main()
 	SetConsoleCP(1251);
 	setlocale(LC_ALL, "ru");
 	
-	DemoFlightWithTime();
 
 	while (true)
  {
@@ -67,6 +66,7 @@ int main()
 					int number = 0;
 					cout << "Введите от 1 до .." << endl;
 					cout << "1. Задание 3.3.4-3.3.5, структура Rectangle" << endl;
+					cout << "2. Задание 3.3.7-3.3.11, структура Flight" << endl;
 					CheckInputInt(&number);
 					switch (number)
 					{
@@ -78,7 +78,7 @@ int main()
 					//
 					case 2:
 						{
-
+							DemoFlightWithTime();
 						} break;
 					} break;
 				}

@@ -17,3 +17,4 @@ void ReadFlightFromConsole(Flight& flight);
 void WriteFlightFromConsole(Flight& flight);
 
 void DemoFlightWithTime();
+void GetFlightTimeMinutes(Flight& flight);

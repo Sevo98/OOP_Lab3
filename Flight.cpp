@@ -84,7 +84,7 @@ void WriteFlightFromConsole(Flight& flight)
 
 void DemoFlightWithTime()
 {
-	const int flightCount = 2;
+	const int flightCount = 5;
 	Flight flight[flightCount];
 	for (int i = 0; i < flightCount; i++)
 	{
@@ -95,4 +95,95 @@ void DemoFlightWithTime()
 		WriteFlightFromConsole(flight[i]);
 	}
 	
+	for (int i = 0; i < flightCount; i++)
+	{
+		GetFlightTimeMinutes(flight[i]);
+	}
+}
+
+void GetFlightTimeMinutes(Flight& flight)
+{
+	int dayCount, hourCount, minuteCount;
+
+	dayCount = flight.DestinationTime.Day - flight.DepartureTime.Day;
+	hourCount = flight.DestinationTime.Hour - flight.DepartureTime.Hour;
+	minuteCount = flight.DestinationTime.Minute - flight.DepartureTime.Minute;
+
+	if (dayCount == 0)
+	{
+		if (hourCount < 0)
+		{
+			throw exception("Неправильно введены часы!");
+		}
+
+		if (minuteCount < 0)
+		{
+			minuteCount = flight.DestinationTime.Minute + flight.DepartureTime.Minute;
+			if (minuteCount >= 60)
+			{
+				minuteCount = minuteCount - 60;
+				hourCount = hourCount + 1;
+			}
+		}
+	}
+	else if (dayCount > 0)
+	{
+		if (hourCount > 0 || hourCount == 0)
+		{
+			//тот же код что и daycount == 0
+			if (hourCount < 0)
+			{
+				throw exception("Неправильно введены часы!");
+			}
+
+			if (minuteCount < 0)
+			{
+				minuteCount = flight.DestinationTime.Minute + flight.DepartureTime.Minute;
+				if (minuteCount >= 60)
+				{
+					minuteCount = minuteCount - 60;
+					hourCount = hourCount + 1;
+				}
+			}
+		}
+
+		else if (hourCount < 0)
+		{
+			dayCount = dayCount - 1;
+			hourCount = flight.DestinationTime.Hour - flight.DepartureTime.Hour + 24;
+			if (hourCount >= 24)
+			{
+				hourCount = hourCount - 24;
+				dayCount = dayCount + 1;
+			}
+
+			//тот же код что и daycount == 0
+			if (hourCount < 0)
+			{
+				throw exception("Неправильно введены часы!");
+			}
+
+			if (minuteCount < 0)
+			{
+				minuteCount = flight.DestinationTime.Minute + flight.DepartureTime.Minute;
+				if (minuteCount >= 60)
+				{
+					minuteCount = minuteCount - 60;
+					hourCount = hourCount + 1;
+				}
+			}
+		}
+	}
+	
+	cout << "\nРейс № " << flight.Number << " " << flight.DeparturePoint << " - " << flight.DestinationPoint << " Время полета: ";
+	if (dayCount > 0)
+	{
+		cout << dayCount << "д. ";
+	}
+	if (hourCount > 0)
+	{
+		cout << hourCount << "ч. ";
+	}
+
+	cout << minuteCount << "минут." << endl;
 }
