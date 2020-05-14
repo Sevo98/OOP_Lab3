@@ -93,6 +93,9 @@
     <ClCompile Include="Flight.cpp">
       <Filter>Исходные файлы\Lab3</Filter>
     </ClCompile>
+    <ClCompile Include="Song.cpp">
+      <Filter>Исходные файлы\Lab3</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Book.h">
@@ -150,6 +153,9 @@
       <Filter>Файлы заголовков\Lab3</Filter>
     </ClInclude>
     <ClInclude Include="Flight.h">
+      <Filter>Файлы заголовков\Lab3</Filter>
+    </ClInclude>
+    <ClInclude Include="Song.h">
       <Filter>Файлы заголовков\Lab3</Filter>
     </ClInclude>
     <ClInclude Include="Genre.h">

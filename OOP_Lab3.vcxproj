@@ -166,6 +166,7 @@
     <ClCompile Include="Point.cpp" />
     <ClCompile Include="Rectangles.cpp" />
     <ClCompile Include="Route.cpp" />
+    <ClCompile Include="Song.cpp" />
     <ClCompile Include="Time.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -188,6 +189,7 @@
     <ClInclude Include="Point.h" />
     <ClInclude Include="Rectangles.h" />
     <ClInclude Include="Route.h" />
+    <ClInclude Include="Song.h" />
     <ClInclude Include="Time.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
