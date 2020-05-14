@@ -159,6 +159,7 @@
     <ClCompile Include="..\..\..\Лабораторная работа №2\OOP_Lab2\OOP_Lab2\Struct with enums.cpp" />
     <ClCompile Include="..\..\..\Лабораторная работа №2\OOP_Lab2\OOP_Lab2\Struct.cpp" />
     <ClCompile Include="Album.cpp" />
+    <ClCompile Include="Band.cpp" />
     <ClCompile Include="Book.cpp" />
     <ClCompile Include="CheckInputDouble.cpp" />
     <ClCompile Include="CheckInputInt.cpp" />
@@ -183,6 +184,7 @@
     <ClInclude Include="..\..\..\Лабораторная работа №2\OOP_Lab2\OOP_Lab2\Struct with enums.h" />
     <ClInclude Include="..\..\..\Лабораторная работа №2\OOP_Lab2\OOP_Lab2\Struct.h" />
     <ClInclude Include="Album.h" />
+    <ClInclude Include="Band.h" />
     <ClInclude Include="Book.h" />
     <ClInclude Include="CheckInputInt.h" />
     <ClInclude Include="CheckInputDouble.h" />

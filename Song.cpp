@@ -117,7 +117,7 @@ void WriteSongFromConsole(Song& song)
 {
 	setlocale(LC_ALL, "ru");
 
-	cout << "\nТрек: " << song.Name << " Жанр: ";
+	cout << " Трек: " << song.Name << " Жанр: ";
 	if (song.Genre == Genre::Rock)
 	{
 		cout << "Рок ";

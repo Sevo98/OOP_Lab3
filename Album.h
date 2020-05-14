@@ -9,11 +9,9 @@ struct Album
 	string Name;
 	int Year;
 	int countSong;
-	Song* Songs;// = new Song[countSong];
+	Song* Songs;
 
 };
 
 void ReadAlbumFromConsole(Album& album);
 void WriteAlbumFromConsole(Album& album);
-
-void DemoAlbum();
