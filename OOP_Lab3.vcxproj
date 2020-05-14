@@ -184,6 +184,7 @@
     <ClInclude Include="CheckInputInt.h" />
     <ClInclude Include="CheckInputDouble.h" />
     <ClInclude Include="Flight.h" />
+    <ClInclude Include="Genre.h" />
     <ClInclude Include="Point.h" />
     <ClInclude Include="Rectangles.h" />
     <ClInclude Include="Route.h" />

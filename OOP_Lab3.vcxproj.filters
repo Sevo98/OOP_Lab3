@@ -152,5 +152,8 @@
     <ClInclude Include="Flight.h">
       <Filter>Файлы заголовков\Lab3</Filter>
     </ClInclude>
+    <ClInclude Include="Genre.h">
+      <Filter>Файлы заголовков\Lab3</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
