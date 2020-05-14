@@ -7,6 +7,7 @@
 #include "Rectangles.h"
 #include "Time.h"
 #include "Flight.h"
+#include "Album.h"
 
 using namespace std;
 
@@ -16,6 +17,7 @@ int main()
 	SetConsoleCP(1251);
 	setlocale(LC_ALL, "ru");
 	
+	DemoAlbum();
 
 	while (true)
  {
