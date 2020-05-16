@@ -14,10 +14,12 @@ struct Band
 	string* Members;
 	int countAlbums;
 	Album* Albums;
+	Song searchSongResult;
 };
 
 
 void ReadBandFromConsole(Band& band);
 void WriteBandFromConsole(Band& band);
+Song* FindSong(Band& band, string songTitle);
 
 void DemoBand();

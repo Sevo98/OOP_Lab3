@@ -76,7 +76,7 @@ void WriteAlbumFromConsole(Album& album)
 		WriteSongFromConsole(album.Songs[i]);
 	}
 
-	delete[] album.Songs;
+	
 }
 
 void DemoAlbum()
@@ -84,7 +84,7 @@ void DemoAlbum()
 	Album album;
 	ReadAlbumFromConsole(album);
 	WriteAlbumFromConsole(album);
-
+	delete[] album.Songs;
 }
 
 

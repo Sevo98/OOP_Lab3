@@ -80,7 +80,7 @@ void WriteBandFromConsole(Band& band)
 	cout << "Группа состоит из ";
 	if (band.countMembers == 1)
 	{
-		cout << "одного человека: " << band.Members[band.countMembers] << endl;
+		cout << "одного человека: " << band.Members[0] << endl;
 	}
 	else
 	{
@@ -95,7 +95,7 @@ void WriteBandFromConsole(Band& band)
 	if (band.countAlbums == 1)
 	{
 		cout << "один альбом: " << endl;
-		WriteAlbumFromConsole(band.Albums[band.countAlbums]);
+		WriteAlbumFromConsole(band.Albums[0]);
 	}
 	else
 	{
@@ -106,8 +106,7 @@ void WriteBandFromConsole(Band& band)
 		}
 	}
 
-	delete[] band.Members;
-	delete[] band.Albums;
+	
 }
 
 void DemoBand()
@@ -115,4 +114,41 @@ void DemoBand()
 	Band band;
 	ReadBandFromConsole(band);
 	WriteBandFromConsole(band);
+
+	cout << "Введите название песни: ";
+	string searchSong;
+	getline(cin, searchSong);
+
+	Song* searchResult = FindSong(band, searchSong);
+	if (searchResult == nullptr)
+	{
+		cout << "Песня не найдена" << endl;
+	}
+	else
+	{
+		WriteSongFromConsole(*searchResult);
+	}
+	
+
+	delete[] band.Members;
+	delete[] band.Albums;
+	//delete band.searchSongResult;
+}
+
+Song* FindSong(Band& band, string songTitle)
+{
+	for (int i = 0; i < band.countAlbums; i++)
+	{
+		for (int j = 0; j < band.Albums[i].countSong; j++)
+		{
+			if (songTitle == band.Albums[i].Songs[j].Name)
+			{
+				band.searchSongResult = band.Albums[i].Songs[j];
+				return &band.searchSongResult;
+				
+			}
+		}
+	}
+
+	return nullptr;
 }

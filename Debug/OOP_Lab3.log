@@ -1,7 +1,5 @@
-﻿  Album.cpp
-  Band.cpp
+﻿  Band.cpp
 C:\Users\sevo9\OneDrive\ТУСУР\2 курс\4 семестр\ООП\Лабораторные работы\Лабораторная работа №3\OOP_Lab3\OOP_Lab3\Band.cpp(39,23): warning C4018: '<': signed/unsigned mismatch
   OOP_Lab3.cpp
-  Song.cpp
   Generating Code...
   OOP_Lab3.vcxproj -> C:\Users\sevo9\OneDrive\ТУСУР\2 курс\4 семестр\ООП\Лабораторные работы\Лабораторная работа №3\OOP_Lab3\Debug\OOP_Lab3.exe
