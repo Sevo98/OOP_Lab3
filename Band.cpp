@@ -119,20 +119,29 @@ void DemoBand()
 	string searchSong;
 	getline(cin, searchSong);
 
-	Song* searchResult = FindSong(band, searchSong);
-	if (searchResult == nullptr)
+	Song* searchResultSong = FindSong(band, searchSong);
+	if (searchResultSong == nullptr)
 	{
 		cout << "Песня не найдена" << endl;
 	}
 	else
 	{
-		WriteSongFromConsole(*searchResult);
+		WriteSongFromConsole(*searchResultSong);
 	}
 	
+	Album* searchResultAlbum = FindAlbum(band, searchResultSong);
+	if (searchResultAlbum == nullptr)
+	{
+		cout << "Альбом с песней не найден." << endl;
+	}
+	else
+	{
+		cout << "Песня " << searchSong << " найдена в альбоме:" << endl;
+		WriteAlbumFromConsole(*searchResultAlbum);
+	}
 
 	delete[] band.Members;
 	delete[] band.Albums;
-	//delete band.searchSongResult;
 }
 
 Song* FindSong(Band& band, string songTitle)
@@ -145,10 +154,25 @@ Song* FindSong(Band& band, string songTitle)
 			{
 				band.searchSongResult = band.Albums[i].Songs[j];
 				return &band.searchSongResult;
-				
 			}
 		}
 	}
 
+	return nullptr;
+}
+
+Album* FindAlbum(Band& band, Song* song)
+{
+	for (int i = 0; i < band.countAlbums; i++)
+	{
+		for (int j = 0; j < band.Albums[i].countSong; j++)
+		{
+			if (song->Name == band.Albums[i].Songs[j].Name)
+			{
+				band.searchAlbumResult = band.Albums[i];
+				return &band.searchAlbumResult;
+			}
+		}
+	}
 	return nullptr;
 }
