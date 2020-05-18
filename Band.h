@@ -17,7 +17,7 @@ struct Band
 	Song searchSongResult;
 	Album searchAlbumResult;
 	int allSongsCount = 0;
-	Song* AllSongsStorage = new Song[100];
+	Song* AllSongsStorage;
 };
 
 

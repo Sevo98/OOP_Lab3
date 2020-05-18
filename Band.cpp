@@ -47,7 +47,7 @@ void ReadBandFromConsole(Band& band)
 	{
 		try
 		{
-			cout << "Введите альбомов группы: ";
+			cout << "Введите количество альбомов группы: ";
 			int count;
 			CheckInputInt(&count);
 			if (count < 0)
@@ -145,10 +145,12 @@ void DemoBand()
 		band.allSongsCount = band.allSongsCount + band.Albums[i].countSong;
 	}
 	
+	band.AllSongsStorage = new Song[band.allSongsCount];
 	GetAllSongs(band);
 	cout << "Всего у группы " << band.Name << " " << band.allSongsCount << " песен. Все песни данной группы:" << endl;
 	for (int i = 0; i < band.allSongsCount; i++)
 	{
+		cout << i + 1 << " - ";
 		WriteSongFromConsole(band.AllSongsStorage[i]);
 	}
 
