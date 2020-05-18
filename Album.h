@@ -8,9 +8,8 @@ struct Album
 {
 	string Name;
 	int Year;
-	int countSong;
+	int countSong = 0;
 	Song* Songs;
-
 };
 
 void ReadAlbumFromConsole(Album& album);

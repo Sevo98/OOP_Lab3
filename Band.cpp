@@ -36,7 +36,7 @@ void ReadBandFromConsole(Band& band)
 	cin.ignore(32767, '\n');
 
 	band.Members = new string[band.countMembers];
-	for (size_t i = 0; i < band.countMembers; i++)
+	for (int i = 0; i < band.countMembers; i++)
 	{
 		cout << "Введите имя " << i + 1 << "-го участника: ";
 		getline(cin, band.Members[i]);
@@ -127,21 +127,36 @@ void DemoBand()
 	else
 	{
 		WriteSongFromConsole(*searchResultSong);
+
+		Album* searchResultAlbum = FindAlbum(band, searchResultSong);
+		if (searchResultAlbum == nullptr)
+		{
+			cout << "Альбом с песней не найден." << endl;
+		}
+		else
+		{
+			cout << "Песня " << searchSong << " найдена в альбоме:" << endl;
+			WriteAlbumFromConsole(*searchResultAlbum);
+		}
+	}
+
+	for (int i = 0; i < band.countAlbums; i++)
+	{
+		band.allSongsCount = band.allSongsCount + band.Albums[i].countSong;
 	}
 	
-	Album* searchResultAlbum = FindAlbum(band, searchResultSong);
-	if (searchResultAlbum == nullptr)
+	GetAllSongs(band);
+	cout << "Всего у группы " << band.Name << " " << band.allSongsCount << " песен. Все песни данной группы:" << endl;
+	for (int i = 0; i < band.allSongsCount; i++)
 	{
-		cout << "Альбом с песней не найден." << endl;
+		WriteSongFromConsole(band.AllSongsStorage[i]);
 	}
-	else
-	{
-		cout << "Песня " << searchSong << " найдена в альбоме:" << endl;
-		WriteAlbumFromConsole(*searchResultAlbum);
-	}
+
 
 	delete[] band.Members;
 	delete[] band.Albums;
+	delete[] band.AllSongsStorage;
+	delete searchResultSong;
 }
 
 Song* FindSong(Band& band, string songTitle)
@@ -157,7 +172,6 @@ Song* FindSong(Band& band, string songTitle)
 			}
 		}
 	}
-
 	return nullptr;
 }
 
@@ -175,4 +189,22 @@ Album* FindAlbum(Band& band, Song* song)
 		}
 	}
 	return nullptr;
+}
+
+//глобальная переменная для счетчика
+
+
+void GetAllSongs(Band& band)
+{	
+	int g = 0;
+	for (int i = 0; i < band.countAlbums; i++)
+	{
+		for (int j = 0; j < band.Albums[i].countSong; j++)
+		{
+			band.AllSongsStorage[g] = band.Albums[i].Songs[j];
+			g++;
+		}
+		
+	}
+	
 }

@@ -16,6 +16,8 @@ struct Band
 	Album* Albums;
 	Song searchSongResult;
 	Album searchAlbumResult;
+	int allSongsCount = 0;
+	Song* AllSongsStorage = new Song[100];
 };
 
 
@@ -23,5 +25,6 @@ void ReadBandFromConsole(Band& band);
 void WriteBandFromConsole(Band& band);
 Song* FindSong(Band& band, string songTitle);
 Album* FindAlbum(Band& band, Song* song);
+void GetAllSongs(Band& band);
 
 void DemoBand();
