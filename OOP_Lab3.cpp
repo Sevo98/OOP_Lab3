@@ -18,14 +18,13 @@ int main()
 	SetConsoleCP(1251);
 	setlocale(LC_ALL, "ru");
 	
-	DemoBand();
-
 	while (true)
  {
 		int number = 0; 
 		cout << "Введите от 1 до …" << endl;
 		cout << "1. Структуры с полями-массивами" << endl;
 		cout << "2. Агрегирование" << endl;
+		cout << "3. Агрегирование один ко многим" << endl;
 		CheckInputInt(&number);
 		switch (number)
 		{
@@ -86,6 +85,10 @@ int main()
 					} break;
 				}
 			}
+			case 3: 
+			{
+				DemoBand();
+			} break;
 		}
 	}
 

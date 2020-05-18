@@ -62,6 +62,33 @@ void ReadAlbumFromConsole(Album& album)
 		ReadSongFromConsole(album.Songs[i]);
 	}
 	
+	for (int i = 0; i < album.countSong; i++)
+	{
+		if (album.Songs[i].Genre == Rock)
+		{
+			album.RockCount++;
+		}
+		if (album.Songs[i].Genre == Metall)
+		{
+			album.MetallCount++;
+		}
+		if (album.Songs[i].Genre == HipHop)
+		{
+			album.HipHopCount++;
+		}
+		if (album.Songs[i].Genre == Rap)
+		{
+			album.RapCount++;
+		}
+		if (album.Songs[i].Genre == Jazz)
+		{
+			album.JazzCount++;
+		}
+		if (album.Songs[i].Genre == Classic)
+		{
+			album.ClassicCount++;
+		}
+	}
 }
 
 void WriteAlbumFromConsole(Album& album)
