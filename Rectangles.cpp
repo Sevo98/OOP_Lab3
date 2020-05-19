@@ -6,7 +6,9 @@ using namespace std;
 
 void ReadRectanglesFromConsole(Rectangles& rectangle)
 {
-	cout << "Задать значения самостоятельно или программно? \n1. Самостоятельно\n2. Программно" << endl;
+	cout << "Задать значения самостоятельно или программно?" << endl;
+	cout << "1. Самостоятельно" << endl;
+	cout << "2. Программно" << endl;
 	int Switch;
 	cin >> Switch;
 	switch (Switch)

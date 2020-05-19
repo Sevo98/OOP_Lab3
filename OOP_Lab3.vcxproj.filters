@@ -102,6 +102,24 @@
     <ClCompile Include="Band.cpp">
       <Filter>Исходные файлы\Lab3</Filter>
     </ClCompile>
+    <ClCompile Include="RectangleClass.cpp">
+      <Filter>Исходные файлы\Lab3</Filter>
+    </ClCompile>
+    <ClCompile Include="PointClass.cpp">
+      <Filter>Исходные файлы\Lab3</Filter>
+    </ClCompile>
+    <ClCompile Include="FlightClass.cpp">
+      <Filter>Исходные файлы\Lab3</Filter>
+    </ClCompile>
+    <ClCompile Include="SongClass.cpp">
+      <Filter>Исходные файлы\Lab3</Filter>
+    </ClCompile>
+    <ClCompile Include="AlbumClass.cpp">
+      <Filter>Исходные файлы\Lab3</Filter>
+    </ClCompile>
+    <ClCompile Include="BandClass.cpp">
+      <Filter>Исходные файлы\Lab3</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Book.h">
@@ -171,6 +189,24 @@
       <Filter>Файлы заголовков\Lab3</Filter>
     </ClInclude>
     <ClInclude Include="Band.h">
+      <Filter>Файлы заголовков\Lab3</Filter>
+    </ClInclude>
+    <ClInclude Include="RectangleClass.h">
+      <Filter>Файлы заголовков\Lab3</Filter>
+    </ClInclude>
+    <ClInclude Include="PointClass.h">
+      <Filter>Файлы заголовков\Lab3</Filter>
+    </ClInclude>
+    <ClInclude Include="FlightClass.h">
+      <Filter>Файлы заголовков\Lab3</Filter>
+    </ClInclude>
+    <ClInclude Include="SongClass.h">
+      <Filter>Файлы заголовков\Lab3</Filter>
+    </ClInclude>
+    <ClInclude Include="AlbumClass.h">
+      <Filter>Файлы заголовков\Lab3</Filter>
+    </ClInclude>
+    <ClInclude Include="BandClass.h">
       <Filter>Файлы заголовков\Lab3</Filter>
     </ClInclude>
   </ItemGroup>

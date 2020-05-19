@@ -14,5 +14,4 @@ struct Rectangles
 
 void ReadRectanglesFromConsole(Rectangles& rectangle);
 void WriteRectanglesFromConsole(Rectangles& rectangle);
-
 void DemoRectangleWithPoint();

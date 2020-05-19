@@ -9,6 +9,7 @@
 #include "Flight.h"
 #include "Album.h"
 #include "Band.h"
+#include "RectangleClass.h"
 
 using namespace std;
 
@@ -21,10 +22,11 @@ int main()
 	while (true)
  {
 		int number = 0; 
-		cout << "Введите от 1 до …" << endl;
+		cout << "Введите от 1 до 4" << endl;
 		cout << "1. Структуры с полями-массивами" << endl;
 		cout << "2. Агрегирование" << endl;
 		cout << "3. Агрегирование один ко многим" << endl;
+		cout << "4. Классы" << endl;
 		CheckInputInt(&number);
 		switch (number)
 		{
@@ -89,6 +91,30 @@ int main()
 			{
 				DemoBand();
 			} break;
+			case 4:
+			{
+				while (true)
+				{
+					int number = 0;
+					cout << "Введите от 1 до .." << endl;
+					cout << "1. Класс Rectangle" << endl;
+					cout << "2. " << endl;
+					CheckInputInt(&number);
+					switch (number)
+					{
+						case 1:
+						{
+							RectangleClass Rectangle;
+							Rectangle.DemoRectangleWithPoint();
+						} break;
+
+						case 2:
+						{
+							
+						} break;
+					} break;
+				}
+			}
 		}
 	}
 
