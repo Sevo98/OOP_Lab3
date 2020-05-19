@@ -3,7 +3,6 @@
 #include "Song.h"
 #include "Genre.h"
 #include "CheckInputInt.h"
-
 using namespace std;
 
 void ReadAlbumFromConsole(Album& album)
@@ -102,8 +101,6 @@ void WriteAlbumFromConsole(Album& album)
 		cout << i + 1 << "-";
 		WriteSongFromConsole(album.Songs[i]);
 	}
-
-	
 }
 
 void DemoAlbum()

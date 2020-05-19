@@ -13,65 +13,64 @@ void RectangleClass::ReadRectanglesFromConsole()
 	switch (Switch)
 	{
 	case 1:
-	{
-		bool CheckLength = false;
-		while (CheckLength == false)
 		{
-			try
+			bool CheckLength = false;
+			while (CheckLength == false)
 			{
-				cout << "Введите длину прямоугольника: ";
-				double Length;
-				CheckInputDouble(&Length);
-				if (Length <= 0)
+				try
 				{
-					throw exception("Длина не может быть меньше 0 или равна 0! Повторите ввод.");
+					cout << "Введите длину прямоугольника: ";
+					double Length;
+					CheckInputDouble(&Length);
+					if (Length <= 0)
+					{
+						throw exception("Длина не может быть меньше 0 или равна 0! Повторите ввод.");
+					}
+					this->Length = Length;
+					CheckLength = true;
 				}
-				this->Length = Length;
-				CheckLength = true;
-			}
-			catch (const exception&)
-			{
-				cout << "Длина не может быть меньше 0 или равна 0! Повторите ввод." << endl;
-			}
-		}
-
-		bool CheckWidth = false;
-		while (CheckWidth == false)
-		{
-			try
-			{
-				cout << "\nВведите ширину прямоугольника: ";
-				double Width;
-				CheckInputDouble(&Width);
-				if (Width <= 0)
+				catch (const exception&)
 				{
-					throw exception("Ширина не может быть меньше 0 или равна 0! Повторите ввод.");
+					cout << "Длина не может быть меньше 0 или равна 0! Повторите ввод." << endl;
 				}
-				this->Width = Width;
-				CheckWidth = true;
 			}
-			catch (const exception&)
-			{
-				cout << "Ширина не может быть меньше 0 или равна 0! Повторите ввод." << endl;
-			}
-		}
 
-		cout << "Введите координаты центра прямоугольника:" << endl;
-		this->point.ReadPointFromConsole();
-	} break;
+			bool CheckWidth = false;
+			while (CheckWidth == false)
+			{
+				try
+				{
+					cout << "\nВведите ширину прямоугольника: ";
+					double Width;
+					CheckInputDouble(&Width);
+					if (Width <= 0)
+					{
+						throw exception("Ширина не может быть меньше 0 или равна 0! Повторите ввод.");
+					}
+					this->Width = Width;
+					CheckWidth = true;
+				}
+				catch (const exception&)
+				{
+					cout << "Ширина не может быть меньше 0 или равна 0! Повторите ввод." << endl;
+				}
+			}
+
+			cout << "Введите координаты центра прямоугольника:" << endl;
+			this->point.ReadPointFromConsole();
+		} break;
 
 	case 2:
-	{
-		double max = 1000.45654;
-		double min = -1000.45654;
-		double X, Y;
-		this->Length = (double)(rand()) / RAND_MAX * max;
-		this->Width = (double)(rand()) / RAND_MAX * max;
-		X = (double)(rand()) / RAND_MAX * (max - min);
-		Y = (double)(rand()) / RAND_MAX * (max - min);
-		this->point.AutoReadPointFromConsole(X, Y);
-	} break;
-
+		{
+			double max = 1000.45654;
+			double min = -1000.45654;
+			double X, Y;
+			this->Length = (double)(rand()) / RAND_MAX * max;
+			this->Width = (double)(rand()) / RAND_MAX * max;
+			X = (double)(rand()) / RAND_MAX * (max - min);
+			Y = (double)(rand()) / RAND_MAX * (max - min);
+			this->point.AutoReadPointFromConsole(X, Y);
+		} break;
 	}
 }
 

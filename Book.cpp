@@ -43,7 +43,6 @@ void DemoBook()
 	{
 		cout << book1.Authors[i] << endl;
 	}*/
-
 }
 
 void ReadBookFromConsole(Book& book)

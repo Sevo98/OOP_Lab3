@@ -70,7 +70,6 @@ void ReadRectanglesFromConsole(Rectangles& rectangle)
 			rectangle.point.X = (double)(rand()) / RAND_MAX * (max - min);
 			rectangle.point.Y = (double)(rand()) / RAND_MAX * (max - min);
 		} break;
-
 	}
 }
 
@@ -110,8 +109,4 @@ void DemoRectangleWithPoint()
 	Ycenter = Ycenter / RectanglesCount;
 
 	cout << "Xcenter = " << Xcenter << "; Ycenter = " << Ycenter << endl;
-
-	/*Rectangles rectangle;
-	ReadRectanglesFromConsole(rectangle);
-	WriteRectanglesFromConsole(rectangle);*/
 }

@@ -70,7 +70,6 @@ void ReadBandFromConsole(Band& band)
 		cout << "Введите данные " << i + 1 << "-го альбома:" << endl;
 		ReadAlbumFromConsole(band.Albums[i]);
 	}
-
 }
 
 void WriteBandFromConsole(Band& band)
@@ -115,7 +114,6 @@ void WriteBandFromConsole(Band& band)
 		band.AllJazzCount = band.AllJazzCount + band.Albums[i].JazzCount;
 		band.AllClassicCount = band.AllClassicCount + band.Albums[i].ClassicCount;
 	}
-	
 }
 
 void DemoBand()
@@ -229,7 +227,6 @@ void DemoBand()
 	
 	cout << "Все песни данного жанра:" << endl;
 	GetAllGenreSongs(band, findGenre);
-
 
 	delete[] band.Members;
 	delete[] band.Albums;

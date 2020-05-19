@@ -3,15 +3,13 @@
 #include "Book.h"
 #include "Route.h"
 #include "CheckInputInt.h"
-#include "Point.h"
 #include "Rectangles.h"
-#include "Time.h"
 #include "Flight.h"
 #include "Album.h"
 #include "Band.h"
 #include "RectangleClass.h"
 #include "FlightClass.h"
-
+#include "BandClass.h"
 using namespace std;
 
 int main()
@@ -61,7 +59,6 @@ int main()
 						DemoRoute();
 						} break;
 					}
-
 				} break;
 			}
 			case 2:
@@ -97,9 +94,10 @@ int main()
 				while (true)
 				{
 					int number = 0;
-					cout << "Введите от 1 до .." << endl;
+					cout << "Введите от 1 до 3" << endl;
 					cout << "1. Класс Rectangle" << endl;
 					cout << "2. Класс Flight" << endl;
+					cout << "3. Класс Band" << endl;
 					CheckInputInt(&number);
 					switch (number)
 					{
@@ -114,18 +112,20 @@ int main()
 							FlightClass Flight;
 							Flight.DemoFlightWithTime();
 						} break;
+						case 3: 
+						{
+							BandClass band;
+							band.DemoBand();
+						} break;
 					} break;
 				}
 			}
 		}
 	}
-
 	//DemoRoute();
     //DemoBook();
 	
-
 	/*Book book;
 	ReadBookFromConsole(book);
 	WriteBookFromConsole(book);*/
-
 }

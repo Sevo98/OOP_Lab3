@@ -1,7 +1,6 @@
 #pragma once
 #include <string>
 #include "Song.h"
-#include "Band.h"
 #include "Album.h"
 
 using namespace std;
