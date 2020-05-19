@@ -176,6 +176,7 @@
     <ClCompile Include="Song.cpp" />
     <ClCompile Include="SongClass.cpp" />
     <ClCompile Include="Time.cpp" />
+    <ClCompile Include="TimeClass.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\Лаборатоная работа №1\OOP_Lab1\OOP_Lab1\Algorithms and Debug.h" />
@@ -207,6 +208,7 @@
     <ClInclude Include="Song.h" />
     <ClInclude Include="SongClass.h" />
     <ClInclude Include="Time.h" />
+    <ClInclude Include="TimeClass.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

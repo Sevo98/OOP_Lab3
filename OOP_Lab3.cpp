@@ -10,6 +10,7 @@
 #include "Album.h"
 #include "Band.h"
 #include "RectangleClass.h"
+#include "FlightClass.h"
 
 using namespace std;
 
@@ -98,7 +99,7 @@ int main()
 					int number = 0;
 					cout << "Введите от 1 до .." << endl;
 					cout << "1. Класс Rectangle" << endl;
-					cout << "2. " << endl;
+					cout << "2. Класс Flight" << endl;
 					CheckInputInt(&number);
 					switch (number)
 					{
@@ -110,7 +111,8 @@ int main()
 
 						case 2:
 						{
-							
+							FlightClass Flight;
+							Flight.DemoFlightWithTime();
 						} break;
 					} break;
 				}

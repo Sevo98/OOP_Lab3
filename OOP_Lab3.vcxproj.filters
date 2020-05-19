@@ -120,6 +120,9 @@
     <ClCompile Include="BandClass.cpp">
       <Filter>Исходные файлы\Lab3</Filter>
     </ClCompile>
+    <ClCompile Include="TimeClass.cpp">
+      <Filter>Исходные файлы\Lab3</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Book.h">
@@ -207,6 +210,9 @@
       <Filter>Файлы заголовков\Lab3</Filter>
     </ClInclude>
     <ClInclude Include="BandClass.h">
+      <Filter>Файлы заголовков\Lab3</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeClass.h">
       <Filter>Файлы заголовков\Lab3</Filter>
     </ClInclude>
   </ItemGroup>
