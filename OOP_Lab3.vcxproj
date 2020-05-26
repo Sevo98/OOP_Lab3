@@ -167,9 +167,12 @@
     <ClCompile Include="CheckInputInt.cpp" />
     <ClCompile Include="Flight.cpp" />
     <ClCompile Include="FlightClass.cpp" />
+    <ClCompile Include="Models3D.cpp" />
     <ClCompile Include="OOP_Lab3.cpp" />
     <ClCompile Include="Point.cpp" />
+    <ClCompile Include="Point3D.cpp" />
     <ClCompile Include="PointClass.cpp" />
+    <ClCompile Include="Polygon.cpp" />
     <ClCompile Include="RectangleClass.cpp" />
     <ClCompile Include="Rectangles.cpp" />
     <ClCompile Include="Route.cpp" />
@@ -200,8 +203,11 @@
     <ClInclude Include="Flight.h" />
     <ClInclude Include="FlightClass.h" />
     <ClInclude Include="Genre.h" />
+    <ClInclude Include="Models3D.h" />
     <ClInclude Include="Point.h" />
+    <ClInclude Include="Point3D.h" />
     <ClInclude Include="PointClass.h" />
+    <ClInclude Include="Polygon.h" />
     <ClInclude Include="RectangleClass.h" />
     <ClInclude Include="Rectangles.h" />
     <ClInclude Include="Route.h" />

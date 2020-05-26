@@ -1,0 +1,49 @@
+﻿  Algorithms and Debug.cpp
+  Arrays.cpp
+C:\Users\sevo9\OneDrive\ТУСУР\2 курс\4 семестр\ООП\Лабораторные работы\Лаборатоная работа №1\OOP_Lab1\OOP_Lab1\Arrays.cpp(37,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Dynamic Array.cpp
+C:\Users\sevo9\OneDrive\ТУСУР\2 курс\4 семестр\ООП\Лабораторные работы\Лаборатоная работа №1\OOP_Lab1\OOP_Lab1\Dynamic Array.cpp(24,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\sevo9\OneDrive\ТУСУР\2 курс\4 семестр\ООП\Лабораторные работы\Лаборатоная работа №1\OOP_Lab1\OOP_Lab1\Dynamic Array.cpp(43,14): warning C4305: '=': truncation from 'int' to 'bool'
+C:\Users\sevo9\OneDrive\ТУСУР\2 курс\4 семестр\ООП\Лабораторные работы\Лаборатоная работа №1\OOP_Lab1\OOP_Lab1\Dynamic Array.cpp(44,13): warning C4305: '=': truncation from 'int' to 'bool'
+C:\Users\sevo9\OneDrive\ТУСУР\2 курс\4 семестр\ООП\Лабораторные работы\Лаборатоная работа №1\OOP_Lab1\OOP_Lab1\Dynamic Array.cpp(45,14): warning C4305: '=': truncation from 'int' to 'bool'
+C:\Users\sevo9\OneDrive\ТУСУР\2 курс\4 семестр\ООП\Лабораторные работы\Лаборатоная работа №1\OOP_Lab1\OOP_Lab1\Dynamic Array.cpp(46,14): warning C4305: '=': truncation from 'int' to 'bool'
+C:\Users\sevo9\OneDrive\ТУСУР\2 курс\4 семестр\ООП\Лабораторные работы\Лаборатоная работа №1\OOP_Lab1\OOP_Lab1\Dynamic Array.cpp(47,14): warning C4305: '=': truncation from 'int' to 'bool'
+C:\Users\sevo9\OneDrive\ТУСУР\2 курс\4 семестр\ООП\Лабораторные работы\Лаборатоная работа №1\OOP_Lab1\OOP_Lab1\Dynamic Array.cpp(49,15): warning C4305: '=': truncation from 'int' to 'bool'
+C:\Users\sevo9\OneDrive\ТУСУР\2 курс\4 семестр\ООП\Лабораторные работы\Лаборатоная работа №1\OOP_Lab1\OOP_Lab1\Dynamic Array.cpp(50,14): warning C4305: '=': truncation from 'int' to 'bool'
+C:\Users\sevo9\OneDrive\ТУСУР\2 курс\4 семестр\ООП\Лабораторные работы\Лаборатоная работа №1\OOP_Lab1\OOP_Lab1\Dynamic Array.cpp(51,15): warning C4305: '=': truncation from 'int' to 'bool'
+C:\Users\sevo9\OneDrive\ТУСУР\2 курс\4 семестр\ООП\Лабораторные работы\Лаборатоная работа №1\OOP_Lab1\OOP_Lab1\Dynamic Array.cpp(40,6): warning C4101: 'i': unreferenced local variable
+C:\Users\sevo9\OneDrive\ТУСУР\2 курс\4 семестр\ООП\Лабораторные работы\Лаборатоная работа №1\OOP_Lab1\OOP_Lab1\Dynamic Array.cpp(132,17): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+  Functions.cpp
+C:\Users\sevo9\OneDrive\ТУСУР\2 курс\4 семестр\ООП\Лабораторные работы\Лаборатоная работа №1\OOP_Lab1\OOP_Lab1\Functions.cpp(28,24): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\Users\sevo9\OneDrive\ТУСУР\2 курс\4 семестр\ООП\Лабораторные работы\Лаборатоная работа №1\OOP_Lab1\OOP_Lab1\Functions.cpp(32,27): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+  Test.cpp
+C:\Users\sevo9\OneDrive\ТУСУР\2 курс\4 семестр\ООП\Лабораторные работы\Лаборатоная работа №1\OOP_Lab1\OOP_Lab1\Test.cpp(15,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Аddresses and pointers.cpp
+  Circle.cpp
+  Enums.cpp
+  Exception Handling.cpp
+  Struct with enums.cpp
+  Struct.cpp
+  Album.cpp
+  AlbumClass.cpp
+  Band.cpp
+  BandClass.cpp
+  Book.cpp
+  CheckInputDouble.cpp
+  CheckInputInt.cpp
+  Flight.cpp
+  FlightClass.cpp
+  Generating Code...
+  Compiling...
+  OOP_Lab3.cpp
+  Point.cpp
+  PointClass.cpp
+  RectangleClass.cpp
+  Rectangles.cpp
+  Route.cpp
+  Song.cpp
+  SongClass.cpp
+  Time.cpp
+  TimeClass.cpp
+  Generating Code...
+  OOP_Lab3.vcxproj -> C:\Users\sevo9\OneDrive\ТУСУР\2 курс\4 семестр\ООП\Лабораторные работы\Лабораторная работа №3\OOP_Lab3\x64\Debug\OOP_Lab3.exe
